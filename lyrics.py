@@ -50,10 +50,7 @@ logo_text = Label(screen, font=("Arial", 20, "bold"), text="L Y R I C    F E T C
 logo_text.place(x=900,y=30)
 screen.bind("<Return>", lookup)
 token = "5tleqhhI99YYNS2IDFbw3J246H_P_vyczkLA2lUjpfgf4sXQsZUxh3Yza0o4OfI1"
-search_term = "Missy Elliott"
 genius = lyricsgenius.Genius(token)
-#artist = genius.search_artist("Lil Baby", max_songs=0, sort="title")
-#song = artist.song("freestyle")
-#print(song.lyrics)
+
 screen.mainloop()
 
