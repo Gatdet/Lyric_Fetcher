@@ -32,18 +32,17 @@ def lookup(dont_worry_about_this_para):
         song = artist.song(song_entry.get())
         lyrics.config(text=song.lyrics)
         text_area.insert(INSERT, song.lyrics)
+        
     
     except AttributeError:
         text_area.insert(INSERT, "DID YOU SPEEL CORRECTLY?")
      
-        
 
-button = Button(screen, text="Grab Lyrics",font=("Arial", 12, "bold"), command=lookup)
 artist_label.place(x=40, y=40)
 song_label.place(x=40, y=100)
 artist_entry.place(x=180, y=40, width=500)
 song_entry.place(x=180, y= 100, width=500)
-button.place(x=10, y=180)
+
 #lyrics.place(x=600, y=10)
 scrollbar.pack(side= RIGHT, fill= BOTH)
 logo_text = Label(screen, font=("Arial", 20, "bold"), text="L Y R I C    F E T C H E R", bg="#ffff64")
